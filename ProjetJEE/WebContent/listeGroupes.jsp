@@ -27,7 +27,7 @@ List<Group> listGroups = groupService.getAllGroups() ;
 			Date dateCreation = group.getDateCreation() ;
 		%>
 		<tr>
-			<td><%=nomG %></td>
+			<td><a href=/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/FicheGroupe.jsp?nomGroupe=<%=nomG%>> <%=nomG %></a></td>
 			<td><%=nomP %></td>
 			<td><%=dateCreation %></td>
 		</tr>

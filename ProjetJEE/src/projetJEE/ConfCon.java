@@ -16,7 +16,6 @@ public class ConfCon extends HttpServlet{
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		String myParameter=request.getParameter("param");
 		String mdp=request.getParameter("mdp");
 		String identifiant=request.getParameter("identifiant");
 		

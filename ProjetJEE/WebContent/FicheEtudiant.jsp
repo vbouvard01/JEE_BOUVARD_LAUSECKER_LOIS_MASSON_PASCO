@@ -1,15 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"
-    import = "java.util.List, java.util.Date, java.sql.ResultSet, project.StudentPackage.StudentService, project.StudentPackage.StudentServiceImpl, project.StudentPackage.Student, project.GroupPackage.GroupService, project.GroupPackage.GroupServiceImpl, project.GroupPackage.Group"%>
+    import = "java.util.Timer, java.util.List, java.util.Date, java.sql.ResultSet, project.StudentPackage.StudentService, project.StudentPackage.StudentServiceImpl, project.StudentPackage.Student, project.GroupPackage.GroupService, project.GroupPackage.GroupServiceImpl, project.GroupPackage.Group"%>
 
 <%
 int id = Integer.parseInt(request.getParameter("id")) ;
+
 StudentService studentService = new StudentServiceImpl() ;
 ResultSet rs = studentService.FicheEtudiant(id) ;
+
 GroupService groupService = new GroupServiceImpl() ;
 List<Group> listGroups = groupService.GroupsFromStudent(id) ;
+
 GroupService groupService2 = new GroupServiceImpl() ;
 List<Group> listExcludedGroups = groupService2.GroupsWhereStudentIsExcluded(id) ;
+
+Timer timer = new Timer() ;
+
+timer.schedule(new TimerTask() {
+	public void run() {
+		 ;
+	}
+}, 30*1000) ;
+
 %>    
 
 <!DOCTYPE html>
@@ -94,7 +106,7 @@ List<Group> listExcludedGroups = groupService2.GroupsWhereStudentIsExcluded(id) 
 			Date dateCreation = group.getDateCreation() ;
 		%>
 		<tr>
-			<td><%=nomG %></td>
+			<td><a href=/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/FicheGroupe.jsp?nomGroupe=<%=nomG%>> <%=nomG %></a></td>
 			<td><%=nomP %></td>
 			<td><%=dateCreation %></td>
 		</tr>
@@ -116,7 +128,7 @@ List<Group> listExcludedGroups = groupService2.GroupsWhereStudentIsExcluded(id) 
 			Date dateCreation = group.getDateCreation() ;
 		%>
 		<tr>
-			<td><%=nomG %></td>
+			<td><a href=/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/FicheGroupe.jsp?nomGroupe=<%=nomG%>> <%=nomG %></a></td>
 			<td><%=nomP %></td>
 			<td><%=dateCreation %></td>
 		</tr>

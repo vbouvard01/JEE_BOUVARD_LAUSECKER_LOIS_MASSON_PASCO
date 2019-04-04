@@ -36,7 +36,7 @@ public class Profil extends HttpServlet{
 		out.println("<input type=\"submit\"></input>");
 		out.println("</form>");
 		
-		out.println("<form action=\"/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/ListeGroupe\" method=\"GET\">");
+		out.println("<form action=\"/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/listeGroupes.jsp\" method=\"GET\">");
 		out.println("Voir page des groupes");
 		out.println("<input type=\"submit\"></input>");
 		out.println("</form>");
