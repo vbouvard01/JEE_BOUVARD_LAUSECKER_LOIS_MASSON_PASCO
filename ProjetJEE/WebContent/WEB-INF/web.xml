@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ProjetJEE</display-name>
+  <servlet>
+  	<display-name>Test</display-name>
+  	<servlet-name>Test</servlet-name>
+  	<servlet-class>TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Test</servlet-name>
+  	<url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<display-name>MainServlet</display-name>
+  	<servlet-name>MainServlet</servlet-name>
+  	<servlet-class>project.MainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MainServlet</servlet-name>
+  	<url-pattern>/MainServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>Accueil</display-name>
+    <servlet-name>Accueil</servlet-name>
+    <servlet-class>projetJEE.Accueil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>/Accueil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>Profil</display-name>
+    <servlet-name>Profil</servlet-name>
+    <servlet-class>projetJEE.Profil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Profil</servlet-name>
+    <url-pattern>/Profil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ListeEtudiant</display-name>
+    <servlet-name>ListeEtudiant</servlet-name>
+    <servlet-class>projetJEE.ListeEtudiant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListeEtudiant</servlet-name>
+    <url-pattern>/ListeEtudiant</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>PageEtudiant</display-name>
+    <servlet-name>PageEtudiant</servlet-name>
+    <servlet-class>projetJEE.PageEtudiant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageEtudiant</servlet-name>
+    <url-pattern>/PageEtudiant</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>SuppressionDeCompte</display-name>
+    <servlet-name>SuppressionDeCompte</servlet-name>
+    <servlet-class>projetJEE.SuppressionDeCompte</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SuppressionDeCompte</servlet-name>
+    <url-pattern>/SuppressionDeCompte</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ListeGroupe</display-name>
+    <servlet-name>ListeGroupe</servlet-name>
+    <servlet-class>projetJEE.ListeGroupe</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListeGroupe</servlet-name>
+    <url-pattern>/ListeGroupe</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>PageGroupe</display-name>
+    <servlet-name>PageGroupe</servlet-name>
+    <servlet-class>projetJEE.PageGroupe</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageGroupe</servlet-name>
+    <url-pattern>/PageGroupe</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ModifGroupe</display-name>
+    <servlet-name>ModifGroupe</servlet-name>
+    <servlet-class>projetJEE.ModifGroupe</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifGroupe</servlet-name>
+    <url-pattern>/ModifGroupe</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ConfCon</display-name>
+    <servlet-name>ConfCon</servlet-name>
+    <servlet-class>projetJEE.ConfCon</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfCon</servlet-name>
+    <url-pattern>/ConfCon</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>PageAdmin</display-name>
+    <servlet-name>PageAdmin</servlet-name>
+    <servlet-class>projetJEE.PageAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageAdmin</servlet-name>
+    <url-pattern>/PageAdmin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>PageEtuEdit</display-name>
+    <servlet-name>PageEtuEdit</servlet-name>
+    <servlet-class>projetJEE.PageEtuEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageEtuEdit</servlet-name>
+    <url-pattern>/PageEtuEdit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>GestionUtilisateur</display-name>
+    <servlet-name>GestionUtilisateur</servlet-name>
+    <servlet-class>projetJEE.GestionUtilisateur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GestionUtilisateur</servlet-name>
+    <url-pattern>/GestionUtilisateur</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>GestionGroupeAdmin</display-name>
+    <servlet-name>GestionGroupeAdmin</servlet-name>
+    <servlet-class>projetJEE.GestionGroupeAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GestionGroupeAdmin</servlet-name>
+    <url-pattern>/GestionGroupeAdmin</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
