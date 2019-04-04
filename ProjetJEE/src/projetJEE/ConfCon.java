@@ -39,7 +39,7 @@ public class ConfCon extends HttpServlet{
 				out.println("<body>");
 				out.println("<h1>connection effectuée</h1>");
 				
-				out.println("<form action=\"/ProjetJEE/Profil\" method=\"GET\">");
+				out.println("<form action=\"/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/Profil\" method=\"GET\">");
 				out.println("ok");
 				out.println("<input type=\"submit\"></input>");
 				out.println("</form>");

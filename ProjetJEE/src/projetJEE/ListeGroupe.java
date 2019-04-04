@@ -15,7 +15,7 @@ public class ListeGroupe extends HttpServlet{
 		out.println("<body>");
 		
 		for (int i=0 ; i<10 ; i++){
-			out.println("<a href=/ProjetJEE/PageGroupe?param="+(i+1)+">groupe"+(i+1)+ "</a><br>");
+			out.println("<a href=/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/PageGroupe?param="+(i+1)+">groupe"+(i+1)+ "</a><br>");
 		}
 		out.println("</body>");
 		out.println("</html>");

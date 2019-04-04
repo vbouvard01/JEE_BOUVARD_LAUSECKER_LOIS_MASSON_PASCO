@@ -20,17 +20,17 @@ public class PageAdmin extends HttpServlet{
 		out.println("<html>");
 		out.println("<body>");
 		
-		out.println("<form action=\"/ProjetJEE/PageEtuEdit\" method=\"GET\">");
+		out.println("<form action=\"/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/PageEtuEdit\" method=\"GET\">");
 		out.println("Gestion des étudiants");
 		out.println("<input type=\"submit\"></input>");
 		out.println("</form>");
 		
-		out.println("<form action=\"/ProjetJEE/GestionUtilisateur\" method=\"GET\">");
+		out.println("<form action=\"/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/GestionUtilisateur\" method=\"GET\">");
 		out.println("Gestion des utilisateurs");
 		out.println("<input type=\"submit\"></input>");
 		out.println("</form>");
 		
-		out.println("<form action=\"/ProjetJEE/GestionGroupeAdmin\" method=\"GET\">");
+		out.println("<form action=\"/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/GestionGroupeAdmin\" method=\"GET\">");
 		out.println("Gestion des groupes");
 		out.println("<input type=\"submit\"></input>");
 		out.println("</form>");

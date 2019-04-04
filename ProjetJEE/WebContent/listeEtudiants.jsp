@@ -29,7 +29,7 @@ List<Student> listStudents = studentService.getAllStudents() ;
 			Date dateNaissance = student.getDateNaissance() ;
 		%>
 		<tr>
-			<td><a href=/ProjetJEE/FicheEtudiant.jsp?id=<%=id%>> <%=id%></a></td>
+			<td><a href=/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/FicheEtudiant.jsp?id=<%=id%>> <%=id%></a></td>
 			<td><%=nom %></td>
 			<td><%=prenom %></td>
 			<td><%=dateNaissance %></td>

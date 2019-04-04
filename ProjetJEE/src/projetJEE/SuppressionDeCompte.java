@@ -19,7 +19,7 @@ public class SuppressionDeCompte extends HttpServlet{
 		out.println("<head><title>compte supprimé</title></head>");
 		out.println("<body>");
 		out.println("<h1>compte supprimé</h1>");
-		out.println("<form action=\"/ProjetJEE/Accueil\" method=\"GET\">");
+		out.println("<form action=\"/JEE_BOUVARD_LAUSECKER_LOIS_MASSON_PASCO_ProjetJEE/Accueil\" method=\"GET\">");
 		out.println("retour à l'accueil");
 		out.println("<input type=\"submit\"></input>");
 		out.println("</form>");
